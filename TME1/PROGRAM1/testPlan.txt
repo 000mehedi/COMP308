@@ -1,0 +1,95 @@
+#Program 1 Test Plan
+
+#Files:
+    Circle.java
+    CircleTest.java
+
+#Test Cases:
+CircleTest.java is a JUnit 4 test class which will run the following test over Circle.java:
+    defaultConstructor()
+    mainConstructor()
+    correctCircumference()
+    correctArea()
+    correctlySetRadius()
+    correctlyLimitRadius()
+    correctlyPrintAttributes()
+    testIsInside()
+    testIsNotInside()
+    testMove()
+
+
+Testings:
+    defaultConstructor()
+        Input:
+            new Circle()
+        Expected Result:
+            Circle centered at (0,0) with radius 6
+
+    mainConstructor()
+        Input:
+            new Circle(10,10,15)
+        Expected Result:
+            Circle centered at (10,10) with radius 15
+
+    correctCircumference()
+        Input:
+            Circle circle = new Circle(0, 0, 10)
+            circle.circumference()
+        Expected Result:
+            62.83
+
+      correctlySetRadius()
+        Input:
+            circle.setRadius(20)
+        Expected Result:
+            circle.radius == 20 i.e. true
+
+      correctlyLimitRadius()
+        Input:
+            circle.setRadius(55)
+        Expected Result:
+            circle.radius = 50
+
+      correctlyPrintAttributes()
+        Input:
+            Circle circle = new Circle(0, 0, 10)
+            circle.printAttributes()
+        Expected Result:
+            Coordinates: (0, 0) Radius: 10.00 Circumference: 62.83 Area: 314.16
+
+      testIsInside()
+        Input:
+            Circle circle = new Circle(0, 0, 5)
+            circle.isInside(4, 3)
+        Expected Result:
+            true
+
+      testIsNotInside()
+        Input:
+            Circle circle = new Circle(0, 0, 5)
+            circle.isInside(12, 5)
+        Expected Result:
+            false
+
+      testMove()
+        Input:
+            Circle circle = new Circle(0, 0, 5)
+            circle.move(10, 10)
+        Expected Result:
+            circle.x == 10
+            circle.y == 10
+
+      testMove()  ##again
+        Input:
+            Circle circle = new Circle(10, 10, 5)
+            circle.move(2, 2)
+        Expected Result:
+            circle.x == 12
+            circle.y == 12
+
+
+
+
+
+
+

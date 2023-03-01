@@ -1,0 +1,105 @@
+#TME1 Objectives
+
+## Unit 1: Section 1, Learning Objective 1
+    #Task: Checklist review and install softwares if necessary.
+
+        Requirements:
+        1. The Java SE Development (JDK 8)
+        2. A text editor
+
+        Interestingly, I had Java pre-installed(had done previous projects with java),
+        so, when I run `javac -version`, it showed me 18.0.1.1. This satisfies the first
+        requirement. For the 2nd requirement, I'm using IntellIJ.
+
+
+
+## Unit 2: Section 2, Learning Objective 1, Question 3
+    #Question: What are the nine primitive types supported by Java? (See TIJ page 65.)
+
+        #boolean: true/false
+
+        #char: The char keyword is a data type that is used to store a single character.
+               A char value must be surrounded by single quotes, like 'A' or 'c'.
+
+        #byte: integer value, takes up 8 bits to represent values between -128 to 127
+
+        #short: integer value, takes up 16 bits to represent values between -32768 to 32767
+
+        #int: integer value, takes up 32 bits to represent values between -2147483648 to 2147483647
+
+        #long: integer value, takes up 64 bits to represent values between -2^63 to (2^63)-1
+
+        #float: Single precision floating point value that stores fractional values with no so many decimal places
+
+        #double: Double precision floating point value that stores more decimal places than float.
+
+        #void: Void is listed as of the Java's nine primitive types in the textbook, although
+               it's not actually primitive. The documentation of Java states that it has eight
+               primitive data types.(https://docs.oracle.com/javase/specs/jls/se8/html/jls-4.html#jls-4.2)
+
+
+
+## Unit 3: Section 1, Learning Objective 1, Question 1
+
+    #Question: What is the precedence among arithmetic operators? (See TIJ page 95.)
+
+        Java operators have 16 levels of precedence where higher levels are solved before
+        lower levels, are solved from left-to-right. The 16 levels are:
+
+      ___________________________________________________
+      | 16 |	()       |       parentheses
+      |    |    []       |       array access
+      |    |    .	     |       member access
+      |____|_____________|_______________________________
+      | 15 |	++       |       unary post-increment
+      |    |    --	     |       unary post-decrement
+      |____|_____________|_______________________________
+      | 14 |	+        |       unary plus
+      |    |    -        |       unary minus
+      |    |    !        |       unary logical NOT
+      |    |    ~        |       unary bitwise NOT
+      |    |    ++       |       unary pre-increment
+      |    |    --       |       unary pre-decrement
+      |____|_____________|_______________________________
+      |  13|    ()       |       cast
+      |    |    new      |       object creation
+      |____|_____________|_______________________________
+      |  12|    * / %    |       multiplicative
+      |____|_____________|_______________________________
+      |  11|    + -      |       additive
+      |    |    +	     |       string concatenation
+      |____|_____________|_______________________________
+      | 10 |    << >>    |       shift
+      |    |    >>>	     |
+      |____|_____________|_______________________________
+      |  9 |	< <=     |       relational
+      |    |    > >=     |
+      |    |  instanceof |
+      |____|_____________|_______________________________
+      |  8 |	==       |       equality
+      |    |    !=		 |
+      |____|_____________|_______________________________
+      |  7 |	&	     |       bitwise AND
+      |____|_____________|_______________________________
+      |  6 |	^	     |       bitwise XOR
+      |____|_____________|_______________________________
+      |  5 |	|	     |       bitwise OR
+      |____|_____________|_______________________________
+      |  4 |	&&	     |       logical AND
+      |____|_____________|_______________________________
+      |  3 |	||	     |       logical OR
+      |____|_____________|_______________________________
+      |  2 |	?:	     |       ternary
+      |____|_____________|_______________________________
+      |  1 |    = += -=  |       assignment
+      |    |    *= /= %= |
+      |    |    &= ^= |= |
+      |    | <<= >>= >>>=|
+      |____|_____________|_______________________________
+      |  0 |	->       |       lambda expression arrow
+      |____|_____________|_______________________________
+
+        Source:   https://introcs.cs.princeton.edu/java/11precedence/
+
+
+

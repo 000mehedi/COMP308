@@ -1,0 +1,23 @@
+# Program 3 Test Plan
+
+#Files:
+    Main.java
+    Cycle.java
+    Bicycle.java
+    Tricycle.java
+
+
+Testing:
+    Bicycle.ride()
+        Input:
+            Bicycle bicycle = new Bicycle();
+            bicycle.ride();
+        Expected result:
+            prints "I'm riding a Bicycle which has 2 wheels."
+
+    Tricycle.ride()
+            Input:
+               Tricycle tricycle = new Tricycle();
+               tricycle.ride();
+            Expected result:
+                prints "I'm riding a Tricycle which has 3 wheels."

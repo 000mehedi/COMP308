@@ -1,0 +1,157 @@
+#Program 2 Test Plan
+
+#Files:
+    FullName.java
+    MailingAddress.java
+    ShippingLabel.java
+
+FullNameTest.java
+    FullNameTest.java is a JUnit 4 test class which will run the following test over FullName.java:
+
+        defaultConstructor()
+        mainConstructor()
+        fullToString
+        noTitleToString
+        noFirstNameToString
+        noMiddleNameToString
+        noLastNameToString
+
+    Testings:
+
+        defaultConstructor()
+            Input:
+                new FullName()
+            Expected Result:
+                FullName object with empty strings for title, firstName, middleName, and lastName.
+
+        mainConstructor()
+            Input:
+                new FullName("Md.", "Abdullah", "Mehedi", "Patwary");
+            Expected Result:
+                FullName object with:
+                    title == "Md."
+                    firstName == "Abdullah"
+                    middleName == "Mehedi"
+                    lastName == "Patwary"
+
+        noTitleToString()
+            Input:
+                new FullName("", "Abdullah", "Mehedi", "Patwary");
+            Expected Result:
+                FullName object with:
+                    title == ""
+                    firstName == "Abdullah"
+                    middleName == "Mehedi"
+                    lastName == "Patwary"
+
+        noFirstNameToString()
+            Input:
+                new FullName("Md.", "", "Mehedi", "Patwary");
+            Expected Result:
+                FullName object with:
+                    title == "Md."
+                    firstName == ""
+                    middleName == "Mehedi"
+                    lastName == "Patwary"
+
+        noMiddleNameToString()
+            Input:
+                new FullName("Md.", "Abdullah", "", "Patwary");
+            Expected Result:
+                FullName object with:
+                    title == "Md."
+                    firstName == "Abdullah"
+                    middleName == ""
+                    lastName == "Patwary"
+
+        noLastNameToString()
+           Input:
+               new FullName("Md.", "Abdullah", "Mehedi", "");
+           Expected Result:
+               FullName object with:
+                   title == "Md."
+                   firstName == "Abdullah"
+                   middleName == "Mehedi"
+                   lastName == ""
+
+
+MailingAddressTest.java
+    MailingAddressTest.java is a JUnit 4 test class which will run the following test over MailingAddress.java:
+         defaultConstructor()
+         mainConstructor()
+         fullNameWithAddressToString()
+
+    Testings:
+
+           defaultConstructor()
+               Input:
+                   new MailingAddress()
+               Expected Result:
+                   MailingAddress object where 'fullName' is a default FullName object along with
+                   empty strings for streetAddress, city, province, and postalCode.
+
+           mainConstructor()
+               Input:
+                   new MailingAddress(fullName, "1 University Dr,", "Athabasca", "AB", "T9S 3A3");
+               Expected Result:
+                   MailingAddress object with:
+                      fullName == new FullName()
+                      streetAddress == "1 University Dr,"
+                      city == "Athabasca"
+                      province == "AB"
+                      postalCode == "T9S 3A3"
+
+           fullNameWithAddressToString()
+                Input:
+                    MailingAddress fullNameWithAddress = new MailingAddress(fullName, "1 University Dr,", "Athabasca", "AB", "T9S 3A3");
+                    fullNameWithAddress.toString();
+                Expected Result:
+                    Md. Abdullah Mehedi Patwary
+                    1 University Dr,
+                    Athabasca, AB T9S 3A3
+
+
+ShippingLabelTest.java
+    ShippingLabelTest.java is a JUnit 4 test class which will run the following test over ShippingLabel.java:
+         defaultConstructor()
+         mainConstructor()
+         labelToString()
+
+    Testings:
+
+         defaultConstructor()
+             Input:
+                 new ShippingLabel()
+             Expected Result:
+                 ShippingLabel object where 'fromMailingAddress' and 'toMailingAddress' are a default MailingAddress
+                 object.
+
+        mainConstructor()
+           Input:
+                MailingAddress toMailingAddress = new MailingAddress(fullName, "1 University Dr,", "Athabasca", "AB", "T9S 3A3");
+                new ShippingLabel(new MailingAddress(), toMailingAddress);
+           Expected Result:
+               ShippingLabel Object where:
+                    fromMailingAddress is set to default MailingAddress
+                    toMailingAddress is equal to label.
+
+        labelToString()
+            Input:
+                MailingAddress toMailingAddress = new MailingAddress(fullName, "1 University Dr,", "Athabasca", "AB", "T9S 3A3");
+                ShippingLabel label = new ShippingLabel(fromMailingAddress, toMailingAddress);
+                label.toString();
+
+            Expected Result:
+                Md. Abdullah Mehedi Patwary
+                1 University Dr,
+                Athabasca, AB T9S 3A3
+
+    ##Run the ShippingLabel.java, it will print the name along with address with it
+
+
+
+
+
+
+
+
