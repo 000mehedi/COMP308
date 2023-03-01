@@ -1,0 +1,43 @@
+#TM3 test plan
+
+#Bell
+    #One Ring
+        #Input
+            gc.new Bell(1000,1,0)
+        #Output
+            Bing!
+    #Two Ring
+        #Input
+            gc.new Bell(1000,2,0)
+        #Output
+            Bing!
+            Bing!
+#Fans
+    #Fans On
+        #Input
+            gc.new FansOn(2000)
+        #Output
+            Greenhouse fans are on!
+    #Two Ring
+        #Input
+            gc.new FansOff(2000)
+        #Output
+            Greenhouse fans are off!
+
+#Event
+    #Input
+        Event=ThermostatNight,time=0
+        Event=Bell,time=2000,rings=5
+        Event=WaterOn,time=3000
+        Event=WaterOff,time=5000
+        Event=Terminate,time=7000
+
+    Output:
+        Thermostat on night settings
+        Bing!
+        Greenhouse water is on
+        Bing!
+        Greenhouse water is off
+        Bing!
+
+        Here, the bell ranged three times, because of Terminate event. The last two Bell event got halted.

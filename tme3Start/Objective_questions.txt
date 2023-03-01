@@ -1,0 +1,36 @@
+#TME3 Objective Questions
+
+    Unit 6:
+        Section 1, Learning Objective 2, Question 6
+
+        Question: What is the function of instanceof?
+            The java instanceof operator is used to test whether the object is an instance of the specified type (class or subclass or interface).
+            It returns either true or false. If we apply the instanceof operator with any variable that has null value, it returns false.
+
+            Example:
+                class Simple1{
+                 public static void main(String args[]){
+                 Simple1 s=new Simple1();
+                 System.out.println(s instanceof Simple1);//true
+                 }
+                }
+
+     [Source]: https://www.javatpoint.com/downcasting-with-instanceof-operator
+
+
+    Unit 7:
+        Section 2, Learning Objective 2, Question 1
+
+        Task: State an example of URL and identify protocol, host, port and filename from there
+
+        ftp://127.0.0.1:2121/hello_world.txt
+
+        Protocol: FTP
+
+        Host: 127.0.0.1 (localhost)
+
+        Port: 2121
+
+        Filename: hello_world.txt
+
+        Format: [Protocol]://[Host]:[Port]/[Filename]
