@@ -1,0 +1,17 @@
+*TME2 Questions:
+    Unit 4: Section 1, Learning Objective 1, Question 1
+
+        #Prompt: Describe the 4 levels of access specification in Java
+            public: public allows to make accessible to anywhere
+            private: private restricts the accessibility to anyone
+            protected: protected allows child classes to access protected members of the parent class
+            package: package keyword allows dividing classes themselves into packages, between which they cannot access each other.
+
+
+    Unit 5: Section 1, Learning Objective 2, Question 2
+
+        #Prompt: Purpose of iterator
+            An Iterator is an object that can be used to loop through collections, like ArrayList and HashSet.
+            It is called an "iterator" because "iterating" is the technical term for looping.
+
+            Source: https://www.w3schools.com/java/java_iterator.asp

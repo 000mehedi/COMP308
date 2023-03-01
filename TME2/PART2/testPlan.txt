@@ -1,0 +1,29 @@
+*TME 2 test plan(part2)
+
+    Generic Order:
+        Input: new GenericOrder(products)
+        Result: Instance of GenericOrder with uUID and product Arraylist
+
+    Computer Order:
+              Input:    ComputerOrder<IComputer> order = new ComputerOrder<>();
+                              order.addProduct(new Motherboard());
+                              order.addProduct(new RAM());
+                              order.addProduct(new Drive()));
+                Result: A computer order with Motherboard, RAM and Drive object.
+
+
+    PartyTray Order:
+            Input:   PartyTrayOrder<IParty> order2 = new PartyTrayOrder<>();
+                             order2.addProduct(new Printer());
+                             order2.addProduct(new Monitor());
+                             order2.addProduct(new AssemblyService());
+                             order2.addProduct(new DeliveryService());
+            Result: A PartyTray order with Monitor, Printer, AssemblyService and DeliveryService object.
+
+    ComputerParty Order:
+            Input:    ComputerPartyOrder<IComputerParty> order3 = new ComputerPartyOrder<>();
+                             order3.addProduct(new Cheddar());
+                             order3.addProduct(new Mozzarella());
+                             order3.addProduct(new Orange());
+                             order3.addProduct(new Apple());
+            Result: A ComputerParty order with Cheese, Mozzarella, Orange and Apple object.
